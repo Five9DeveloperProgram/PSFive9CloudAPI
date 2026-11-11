@@ -27,7 +27,7 @@ try {
     
     $ModulePath = Join-Path $ModulesPath "PSFive9CloudAPI"
     $TempZip = "$env:TEMP\PSFive9CloudAPI.zip"
-    $DownloadUrl = "https://github.com/justingray82/PSFive9CloudAPI/archive/refs/heads/main.zip"
+    $DownloadUrl = "https://github.com/Five9DeveloperProgram/PSFive9CloudAPI/archive/refs/heads/main.zip"
     
     # Create modules directory if it doesn't exist
     Write-Host "Creating modules directory..." -ForegroundColor Yellow
