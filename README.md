@@ -1,3 +1,10 @@
+ **This repository was moved.**
+ This project was originally developed and maintained at
+ [github.com/justingray82/PSFive9CloudAPI](https://github.com/justingray82/PSFive9CloudAPI).
+ It has since been migrated here, where all future development, issues, and releases will be managed.
+
+
+ The original repository is kept for reference and history.
 # PSFive9CloudAPI
 
 A PowerShell module designed to simplify interacting with the Five9 Cloud APIs. It supports PowerShell 5.1 and PowerShell 7+, enabling you to authenticate using OAuth2 or Basic authentication and perform operations against Five9 endpoints.
@@ -13,7 +20,7 @@ A PowerShell module designed to simplify interacting with the Five9 Cloud APIs. 
 
 ## Quick Installation
 ```powershell
-irm "https://raw.githubusercontent.com/justingray82/PSFive9CloudAPI/main/Install-PSFive9CloudAPI.ps1" | iex
+irm "https://raw.githubusercontent.com/Five9DeveloperProgram/PSFive9CloudAPI/main/Install-PSFive9CloudAPI.ps1" | iex
 Import-Module PSFive9CloudAPI -Force
 ```
 
