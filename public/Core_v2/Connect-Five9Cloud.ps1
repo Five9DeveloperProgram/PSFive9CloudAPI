@@ -18,7 +18,7 @@
     if (-not $SkipUpdateCheck) {
         try {
             Write-Verbose "Checking for PSFive9CloudAPI updates..."
-            $psdUrl    = 'https://raw.githubusercontent.com/justingray82/PSFive9CloudAPI/main/PSFive9CloudAPI.psd1'
+            $psdUrl    = 'https://raw.githubusercontent.com/Five9DeveloperProgram/PSFive9CloudAPI/main/PSFive9CloudAPI.psd1'
             $rawPsd1   = (Invoke-WebRequest -Uri $psdUrl -TimeoutSec 5 -UseBasicParsing -ErrorAction Stop).Content
             $remoteVer = [regex]::Match($rawPsd1, "ModuleVersion\s*=\s*'([^']+)'").Groups[1].Value
             $localVer  = (Get-Module PSFive9CloudAPI -ErrorAction SilentlyContinue).Version.ToString()
@@ -28,7 +28,7 @@
 
                 $modulePath = (Get-Module PSFive9CloudAPI -ErrorAction SilentlyContinue).ModuleBase
                 if ($modulePath) {
-                    $zipUrl  = 'https://github.com/justingray82/PSFive9CloudAPI/archive/refs/heads/main.zip'
+                    $zipUrl  = 'https://github.com/Five9DeveloperProgram/PSFive9CloudAPI/archive/refs/heads/main.zip'
                     $tempZip = "$env:TEMP\PSFive9CloudAPI_update.zip"
                     $tempDir = "$env:TEMP\PSFive9CloudAPI_update"
 
